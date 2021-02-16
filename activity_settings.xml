@@ -1,0 +1,138 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "16dp"
+    tools:context = ".Settings">
+
+    <Button
+        android:id = "@+id/btnSwitch"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:textSize="50dp"
+        android:backgroundTint="#C92F31"
+        android:layout_gravity = "center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop = "8dp"
+        android:text = "OFF" />
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnSwitch"
+        android:layout_above="@id/btnSave"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id = "@+id/et1"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint = "Message"
+                android:inputType = "text" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <EditText
+                android:id = "@+id/et2"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint = "Message"
+                android:inputType = "text" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <EditText
+                android:id = "@+id/et3"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint = "Message"
+                android:inputType = "text" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <EditText
+                android:id = "@+id/et4"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint = "Message"
+                android:inputType = "text" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <EditText
+                android:id = "@+id/et5"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint = "Message"
+                android:inputType = "text" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id = "@+id/btnSave"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_weight="1"
+        android:textSize="50dp"
+        android:backgroundTint="#DBDE33"
+        android:layout_gravity = "center"
+        android:layout_above="@id/btnBack"
+        android:layout_marginTop = "8dp"
+        android:text = "SAVE" />
+
+    <Button
+        android:id = "@+id/btnBack"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:textSize="50dp"
+        android:backgroundTint="#2F6DC9"
+        android:layout_gravity = "center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop = "8dp"
+        android:text = "BACK" />
+
+</RelativeLayout>

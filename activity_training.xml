@@ -1,0 +1,93 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "16dp"
+    tools:context = ".Training">
+
+    <TextView
+        android:id = "@+id/textView"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="130dp"
+        android:layout_marginTop = "8dp"
+        android:gravity="center_horizontal"
+        android:text = "A" />
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout"
+        android:layout_below="@id/textView"
+        android:layout_above="@id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id = "@+id/btn1"
+                android:backgroundTint="#C92F31"
+                android:textSize="50dp"
+                android:layout_weight="1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id = "@+id/btn2"
+                android:backgroundTint="#2FC963"
+                android:textSize="50dp"
+                android:layout_weight="1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent"
+                android:layout_marginLeft="8dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id = "@+id/btn3"
+                android:backgroundTint="#2F6DC9"
+                android:textSize="50dp"
+                android:layout_weight="1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent"
+                android:layout_marginTop = "8dp"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id = "@+id/btn4"
+                android:backgroundTint="#DBDE33"
+                android:textSize="50dp"
+                android:layout_weight="1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent"
+                android:layout_marginTop = "8dp"
+                android:layout_marginLeft="8dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id = "@+id/btnBack"
+        android:backgroundTint="#C92F31"
+        android:layout_weight="1"
+        android:layout_width = "fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height = "wrap_content"
+        android:layout_marginRight="8dp"
+        android:textSize="50dp"
+        android:text="BACK"/>
+
+</RelativeLayout>

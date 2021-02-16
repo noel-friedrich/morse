@@ -1,0 +1,95 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "16dp"
+    tools:context = ".MainActivity">
+
+    <EditText
+        android:id = "@+id/etmsg"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:textSize="50dp"
+        android:backgroundTint="#2F6DC9"
+
+        android:layout_below="@+id/btnSend"
+        android:hint = "Message"
+        android:inputType = "text" />
+
+    <Button
+        android:id = "@+id/btnSend"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:textSize="50dp"
+        android:backgroundTint="#2FC963"
+        android:layout_gravity = "center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop = "8dp"
+        android:text = "SEND" />
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/etmsg"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id = "@+id/btnStop"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:textSize="50dp"
+                android:backgroundTint="#C92F31"
+                android:layout_weight="1"
+                android:layout_marginTop = "8dp"
+                android:text = "STOP" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id = "@+id/btnTraining"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:textSize="50dp"
+                android:backgroundTint="#2F6DC9"
+                android:layout_weight="1"
+                android:layout_marginTop = "8dp"
+                android:text = "TRAINING" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id = "@+id/btnSettings"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#DBDE33"
+                android:textSize="50dp"
+                android:layout_marginTop = "8dp"
+                android:text = "SETTINGS" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
